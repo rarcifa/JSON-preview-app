@@ -1,0 +1,32 @@
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 0px;
+}
+
+.__json-pretty__ {
+  line-height: 1.3;
+  color: #192532;
+  background: #ffffff;
+  overflow: auto;
+}
+
+.__json-pretty__ .__json-string__ {
+  color: #2d64b3;
+}
+
+.__json-pretty__ .__json-value__ {
+  color: #e22ec2;
+}

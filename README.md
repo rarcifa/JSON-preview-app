@@ -35,6 +35,10 @@ After isntalling the app, you can activate the app as a field view, or a Entry E
 ![App Installation](./assets/editor.png)
 
 ![App Installation](./assets/token.png)
+<<<<<<< HEAD
+=======
+```
+>>>>>>> 777b166851dc28d5ffa8ab9c2852c5ba4e22a4e1
 
 ## For Developers: Running This App Locally
 

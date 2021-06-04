@@ -3,8 +3,8 @@ import {
   Flex,
 } from '@contentful/forma-36-react-components';
 import { EditorExtensionSDK } from '@contentful/app-sdk';
-import 'react-json-pretty/themes/monikai.css';
-import JSONPretty from 'react-json-pretty';
+// import the react-json-view component
+import ReactJson from 'react-json-view'
 
 interface EditorProps {
   sdk: EditorExtensionSDK;
@@ -34,16 +34,14 @@ const Entry = (props: EditorProps) => {
 
     // API 
     client.getEntry(props.sdk.ids.entry)
-      .then((entry: { fields: React.SetStateAction<undefined>; }) => {
-        setPage(entry.fields);
+      .then((entry: React.SetStateAction<undefined>) => {
+        setPage(entry);
       })
   }, []);
 
   return <React.Fragment>
-    <Flex marginTop="spacingL" margin="spacingL">
-
-
-    <JSONPretty data={page}></JSONPretty>
+    <Flex marginTop="spacingL" margin="spacingL"> 
+<     ReactJson src={page!}/>
     </Flex>
 
   </React.Fragment>;

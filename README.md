@@ -36,52 +36,6 @@ After isntalling the app, you can activate the app as a field view, or a Entry E
 
 ![App Installation](./assets/token.png)
 
-```ts
-{
-    id: string;
-    list: [
-        {
-            name: string;
-            value: string;
-            image: string;
-            category: string;
-        }
-    ]
-}
-```
-
-*Note that the `id` property is automatically generated and useful for developers
-to differentiate between different collections even if the labels are the same or similar*
-
-An example item in the Contentful response:
-
-```json
-{
-    "fields": {
-        "collection": [
-            {
-                "name": "Luke Skywalker",
-                "value": "Luke Skywalker",
-                "image": "https://media.contentapi.ea.com/content/dam/star-wars-battlefront-2/images/2019/08/swbf2-refresh-hero-large-heroes-page-luke-skywalker-16x9-xl.jpg.adapt.crop1x1.320w.jpg",
-                "category": "Starwars"
-            },
-            {
-                "name": "C-3PO",
-                "value": "C-3PO",
-                "image": "https://i.pinimg.com/564x/ae/cc/e5/aecce55bc3c39e0a4f9109e619a8806c.jpg",
-                "category": "Starwars"
-            },
-            {
-                "name": "R2-D2",
-                "value": "R2-D2",
-                "image": "https://www.space-figuren.de/images/product_images/info_images/9696_0.jpg",
-                "category": "Starwars"
-            }
-        ]
-    }
-}
-```
-
 ## For Developers: Running This App Locally
 
 > This project was bootstrapped with [Create Contentful App](https://github.com/contentful/create-contentful-app).
